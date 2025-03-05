@@ -60,11 +60,11 @@ export default function Navbar() {
         {
             !isLoggedIn && (
                 <div className="flex space-x-2">
-                    <Link href="#">
-                        <button className="px-7 py-2 text-white bg-[#262832] rounded-lg" onClick={() => setIsLoggedIn(true)}>Login</button>
+                    <Link href="/login">
+                        <button className="px-7 py-2 text-white bg-[#262832] rounded-lg" onClick={() => setIsLoggedIn(true)}>Sign In</button>
                     </Link> 
                     
-                    <Link href="#">
+                    <Link href="/register">
                         <button className="px-7 py-2 text-black rounded-lg border border-black" onClick={() => setIsLoggedIn(true)}>Sign Up</button>
                     </Link>
                     

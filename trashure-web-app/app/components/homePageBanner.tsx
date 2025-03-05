@@ -4,8 +4,15 @@ export default function HomePageBanner() {
     return (
         <div className="md:flex items-center justify-center h-[610px] w-[1340px] bg-[#262832] rounded-2xl overflow-hidden px-8">
             <div className="flex flex-col gap-8">
-                <h1 className="font-semibold text-white text-7xl">Lorem Ipsum <span className="bg-[#95E500] rounded-md py-0 px-1">dolor</span> <br />
-                    sit amet
+                <h1 className="font-semibold text-white text-7xl">
+                    the green country,<br />
+                    <div className="mt-4">
+                        make a 
+                        <span className="bg-[#95E500] rounded-md py-0 px-1 ml-2">
+                            win country
+                        </span>
+                    </div>
+                    
                 </h1>
 
                 <div className="flex gap-8 mt-16 text-white">
