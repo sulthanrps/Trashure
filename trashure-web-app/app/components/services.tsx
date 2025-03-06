@@ -1,6 +1,6 @@
 'use client'
 
-import { listItems } from "./navbar";
+import { navData } from "../misc/navData";
 import Image from "next/image";
 
 export default function Services() {
@@ -11,7 +11,7 @@ export default function Services() {
       <div className="grid grid-cols-4 gap-4">
                 
         {
-            listItems.map((item, index) => {
+            navData.map((item, index) => {
                 return (
                     <div key={index} className="p-6 border border-black-600 rounded-2xl flex flex-col justify-center mt-8">
                         <div className="flex gap-3">
