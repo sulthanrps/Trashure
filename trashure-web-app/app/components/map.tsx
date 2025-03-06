@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import L from 'leaflet'
-import 'leaflet/dist/leaflet.css'
+import { popUpData } from "../misc/popUpData"
 
 export default function Map(){
     useEffect(() => {
@@ -26,42 +26,28 @@ export default function Map(){
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
         }).addTo(map)
-
-        L.marker([-7.5361, 112.2384])
+        
+        popUpData.map((data) => {
+            L.marker([data.lonlan[0], data.lonlan[1]])
             .addTo(map)
             .bindPopup(`
                     <div>
-                        <h1 style="font-weight: bold; font-size: 20px;">Event Kerja Bakti Di Jombang</h1>
+                        <h1 style="font-weight: bold; font-size: 20px;">${data.title}</h1>
                         <p>
-                            Tanggal pelaksanaan : 12 Agustus 2025 <br />
-                            Hubungi : 08xxxxxxxxxx
+                            Tanggal pelaksanaan : ${data.date} <br />
+                            Hubungi : ${data.contactPerson}
                         </p>
 
                         <img
-                            src='/vision-img.jpg'
+                            src=${data.imgSrc}
                             style="width: 100%; max-width: 300px; height: auto;"
-                            alt="Vision Image"
+                            alt=${data.imgAlt}
                         />
                     </div>
             `)
+        })
 
-        L.marker([-7.63, 111.523])
-            .addTo(map)
-            .bindPopup(`
-                    <div>
-                        <h1 style="font-weight: bold; font-size: 20px;">Sosialisasi Daur Ulang Di Madiun</h1>
-                        <p>
-                            Tanggal pelaksanaan : 10 Agustus 2025 <br />
-                            Hubungi : 08xxxxxxxxxx
-                        </p>
-
-                        <img
-                            src='/vision-img.jpg'
-                            style="width: 100%; max-width: 300px; height: auto;"
-                            alt="Vision Image"
-                        />
-                    </div>
-            `)
+       
 
         return () => {
             map.remove()

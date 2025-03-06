@@ -3,25 +3,7 @@
 import Image from "next/image"
 import Link from "next/link";
 import { useState } from "react";
-
-export const listItems = [
-    {
-        name: 'EduGreen',
-        icon: '/edu-green'
-    },
-    {
-        name: 'Waste Connect',
-        icon: '/waste-connect'
-    },
-    {
-        name: 'Trashure Worth',
-        icon: '/trashure-worth'
-    },
-    {
-        name: 'ReMarket',
-        icon: '/re-market'
-    }
-];
+import { navData } from "../misc/navData";
 
 export default function Navbar() {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -36,7 +18,7 @@ export default function Navbar() {
 
 
         <ul className="flex space-x-4 text-black">
-            {listItems.map((item, index) => {
+            {navData.map((item, index) => {
                 return (
                     <a href="#" key={index}>
                         <li className="bg-[#F0F0F0] rounded-full px-5 py-1 pl-1 text-xs font-semibold inline-flex justify-start items-center gap-2 hover:bg-[#262832] hover:text-white">
