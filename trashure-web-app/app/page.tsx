@@ -8,7 +8,7 @@ import "./globals.css";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar /> 
+      <Navbar loggedIn={false} /> 
 
       <div className="flex flex-col items-center justify-center">
       
