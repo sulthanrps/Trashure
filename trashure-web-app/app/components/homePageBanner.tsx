@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function HomePageBanner() {
     return (
-        <div className="md:flex items-center justify-center h-[610px] w-[1340px] bg-[#262832] rounded-2xl overflow-hidden px-8">
-            <div className="flex flex-col gap-8">
+        <div className="md:flex items-center justify-between h-[610px] w-[93%] bg-[#262832] rounded-2xl px-8 relative">
+            <div className="flex flex-col gap-8 ml-8">
                 <h1 className="font-semibold text-white text-7xl">
                     the green country,<br />
                     <div className="mt-4">
@@ -39,7 +39,7 @@ export default function HomePageBanner() {
                 alt="Hero Image"
                 width={550}
                 height={400}
-                className="pt-32 ml-20"
+                className="pt-4 ml-20 absolute right-0 overflow-hidden"
             />
         </div>
     )
