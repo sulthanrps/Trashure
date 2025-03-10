@@ -1,9 +1,15 @@
-import GreenMap from "../components/greenMap";
+"use client"
+
 import HomePageBanner from "../components/homePageBanner";
 import Navbar from "../components/navbar";
 import OurVision from "../components/ourVision";
 import Services from "../components/services";
 import "./globals.css";
+import dynamic from "next/dynamic";
+
+const GreenMap = dynamic(() => import ("../components/greenMap"), {
+  ssr: false
+})
 
 export default function Home() {
   return (
