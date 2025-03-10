@@ -1,6 +1,6 @@
 'use client'
-
-import { navData } from "../misc/navData";
+import Link from "next/link";
+import { navData } from "../data/navData";
 import Image from "next/image";
 
 export default function Services() {
@@ -13,11 +13,12 @@ export default function Services() {
         {
             navData.map((item, index) => {
                 return (
-                    <div key={index} className="p-6 border border-black-600 rounded-2xl flex flex-col justify-center mt-8">
+                  <Link href={item.icon} key={index}>
+                      <div className="p-6 border border-black-600 rounded-2xl flex flex-col justify-center mt-8 hover:border hover:border-2 hover:border-black cursor-pointer">
                         <div className="flex gap-3">
                             <div className="w-7 h-7 bg-black rounded-full flex items-center justify-center">
                                 <Image
-                                    src={`${item.icon}-white.png`}
+                                    src={`${item.icon}-white.svg`}
                                     width={15}
                                     height={15}
                                     alt="Icon"
@@ -30,7 +31,9 @@ export default function Services() {
                         <p className="mt-6 w-[220px] text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet...
                         </p>
-                    </div>
+                      </div>
+                  </Link>
+                    
                 )
             })
         }

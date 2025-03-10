@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import L from 'leaflet'
-import { popUpData } from "../misc/popUpData"
+import { popUpData } from "../data/popUpData"
 
 export default function Map(){
     useEffect(() => {

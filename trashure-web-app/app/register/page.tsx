@@ -1,8 +1,8 @@
 import Link from "next/link";
-import SignInBanner from "../components/signInBanner";
-import SignInNav from "../components/signInNav";
-import Input from "../components/input";
-import Select from "../components/select";
+import SignInBanner from "../../components/signInBanner";
+import SignInNav from "../../components/signInNav";
+import Input from "../../components/input";
+import Select from "../../components/select";
 
 export default function Register(){
     return (

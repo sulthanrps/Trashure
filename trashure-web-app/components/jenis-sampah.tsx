@@ -1,4 +1,4 @@
-import { trashData } from "@/app/misc/trashData"
+import { trashData } from "@/data/trashData"
 import Image from "next/image"
 export default function JenisSampah(){
     return (
