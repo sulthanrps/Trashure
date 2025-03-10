@@ -3,14 +3,13 @@
 import Image from "next/image"
 import Link from "next/link";
 import { useState } from "react";
-import { navData } from "../misc/navData";
+import { navData } from "../data/navData";
 
 interface INavbarProps {
     loggedIn: boolean
 }
 
 export default function Navbar({loggedIn} : INavbarProps) {
-    const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
     return (
     <nav className="flex items-center justify-between p-12 text-white">
         <Link href={"/"}>
@@ -28,10 +27,10 @@ export default function Navbar({loggedIn} : INavbarProps) {
             {navData.map((item, index) => {
                 return (
                     <Link href={item.icon} key={index}>
-                        <li className="bg-[#F0F0F0] rounded-full px-5 py-1 pl-1 text-xs font-semibold inline-flex justify-start items-center gap-2 hover:bg-[#262832] hover:text-white">
+                        <li className="bg-[#F0F0F0] rounded-full px-5 py-2 pl-2 text-xs font-semibold inline-flex justify-start items-center gap-2 hover:bg-[#262832] hover:text-white">
                             <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                                 <Image
-                                    src={`${item.icon}.png`}
+                                    src={`${item.icon}.svg`}
                                     width={15}
                                     height={15}
                                     alt="Icon"
@@ -50,11 +49,11 @@ export default function Navbar({loggedIn} : INavbarProps) {
             !loggedIn && (
                 <div className="flex space-x-2">
                     <Link href="/login">
-                        <button className="px-7 py-2 text-white bg-[#262832] rounded-lg" onClick={() => setIsLoggedIn(true)}>Sign In</button>
+                        <button className="px-7 py-2 text-white bg-[#262832] rounded-lg" onClick={() => console.log("Sign in")}>Sign In</button>
                     </Link> 
                     
                     <Link href="/register">
-                        <button className="px-7 py-2 text-black rounded-lg border border-black" onClick={() => setIsLoggedIn(true)}>Sign Up</button>
+                        <button className="px-7 py-2 text-black rounded-lg border border-black" onClick={() => console.log("Sign in")}>Sign Up</button>
                     </Link>
                     
                 </div>
@@ -63,7 +62,7 @@ export default function Navbar({loggedIn} : INavbarProps) {
 
         {
             loggedIn && (
-                <a className="flex items-center gap-2 border border-gray rounded-md p-2" href="#" onClick={() => setIsLoggedIn(false)}>
+                <a className="flex items-center gap-2 border border-gray rounded-md p-2" href="#" onClick={() => console.log("Sign in")}>
                     <div className="w-6  h-6 bg-gray-200 rounded-full"></div>
                     <p className="text-sm text-black">Sulthan Rafi</p>
                 </a>

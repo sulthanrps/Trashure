@@ -1,5 +1,5 @@
-import JenisSampah from "./components/jenis-sampah";
-import TrashureWorthBanner from "./components/trashure-worth-banner";
+import JenisSampah from "../../components/jenis-sampah";
+import TrashureWorthBanner from "../../components/trashure-worth-banner";
 
 export default function TrashureWorth() {
     return (

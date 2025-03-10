@@ -1,8 +1,8 @@
 import Image from "next/image"
-import TwAddBanner from "../components/tw-add-banner"
-import Select from "@/app/components/select"
-import { trashData } from "@/app/misc/trashData"
-import Input from "@/app/components/input"
+import TwAddBanner from "../../../components/tw-add-banner"
+import Select from "@/components/select"
+import { trashData } from "@/data/trashData"
+import Input from "@/components/input"
 import Link from "next/link"
 
 export default function TrashureWorthAdd(){

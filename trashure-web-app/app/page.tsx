@@ -1,8 +1,8 @@
-import GreenMap from "./components/greenMap";
-import HomePageBanner from "./components/homePageBanner";
-import Navbar from "./components/navbar";
-import OurVision from "./components/ourVision";
-import Services from "./components/services";
+import GreenMap from "../components/greenMap";
+import HomePageBanner from "../components/homePageBanner";
+import Navbar from "../components/navbar";
+import OurVision from "../components/ourVision";
+import Services from "../components/services";
 import "./globals.css";
 
 export default function Home() {

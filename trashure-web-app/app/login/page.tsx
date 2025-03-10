@@ -1,6 +1,6 @@
-import SignInBanner from "../components/signInBanner";
-import Input from "../components/input";
-import SignInNav from "../components/signInNav";
+import SignInBanner from "../../components/signInBanner";
+import Input from "../../components/input";
+import SignInNav from "../../components/signInNav";
 import Link from "next/link";
 export default function Login(){
     return (
@@ -36,7 +36,7 @@ export default function Login(){
                     </div>
 
                     <Link href="/">
-                        <input type="submit" value={"Sign in"} className="px-8 py-3 font-semibold text-white bg-[#262832] rounded-lg w-[100%] mt-8 pointer" />
+                        <input type="submit" value={"Sign in"} className="px-8 py-3 font-semibold text-white bg-[#262832] rounded-lg w-[100%] mt-8 cursor-pointer" />
                     </Link>
                 </form>
             </div>
