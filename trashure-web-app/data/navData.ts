@@ -1,7 +1,7 @@
 export const navData = [
     {
         name: 'EduGreen',
-        icon: '/edu-green'
+        icon: '/edugreen'
     },
     {
         name: 'Waste Connect',

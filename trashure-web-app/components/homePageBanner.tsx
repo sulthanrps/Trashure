@@ -44,4 +44,3 @@ export default function HomePageBanner() {
         </div>
     )
 }
-// Compare this snippet from web-app-practice/app/components/homePageBanner.tsx:
