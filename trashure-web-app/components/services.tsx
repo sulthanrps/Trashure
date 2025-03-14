@@ -14,7 +14,7 @@ export default function Services() {
             navData.map((item, index) => {
                 return (
                   <Link href={item.icon} key={index}>
-                      <div className="p-6 border border-black-600 rounded-2xl flex flex-col justify-center mt-8 hover:border hover:border-2 hover:border-black cursor-pointer">
+                      <div className="p-6 max-h-max border border-black-600 rounded-2xl flex flex-col justify-center mt-8 hover:border hover:border-2 hover:border-black cursor-pointer">
                         <div className="flex gap-3">
                             <div className="w-7 h-7 bg-black rounded-full flex items-center justify-center">
                                 <Image
@@ -29,7 +29,7 @@ export default function Services() {
                         </div>
                         
                         <p className="mt-6 w-[220px] text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet...
+                            {item.detail}
                         </p>
                       </div>
                   </Link>

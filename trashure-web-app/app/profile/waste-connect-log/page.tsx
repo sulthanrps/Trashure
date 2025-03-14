@@ -1,6 +1,5 @@
 import ProfileNav from "@/components/profileNav"
 import ProfileWasteConnectBanner from "@/components/profileWasteConnectBanner"
-import { poinHistory } from "@/data/poinHistory"
 import Image from "next/image"
 import Link from "next/link"
 
