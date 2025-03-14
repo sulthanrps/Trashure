@@ -62,7 +62,7 @@ export default function Navbar({loggedIn} : INavbarProps) {
         {
             loggedIn && (
                 <a className="flex items-center gap-2 border border-gray rounded-md p-2" href="#" onClick={() => console.log("Sign in")}>
-                    <div className="w-6  h-6 bg-gray-200 rounded-full"></div>
+                    <div className="w-6 h-6 bg-gray-200 rounded-full"></div>
                     <p className="text-sm text-black">Sulthan Rafi</p>
                 </a>
             )
