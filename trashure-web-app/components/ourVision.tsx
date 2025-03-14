@@ -43,10 +43,10 @@ export default function OurVision(){
 
                 <div className="mt-8 flex flex-col justify-center w-[490px]">
                     <h2 className="font-semibold text-[40px]">
-                        Trashure's Vision
+                        Trashure&apos;s Vision
                     </h2>
                     <p className="mt-4 text-justify">
-                        To become the leading digital platform in integrated, sustainable recycling management, and to encourage changes in people's behavior towards a cleaner and more valuable environment.
+                        To become the leading digital platform in integrated, sustainable recycling management, and to encourage changes in people&apos;s behavior towards a cleaner and more valuable environment.
                     </p>
                 </div>
             </div>
