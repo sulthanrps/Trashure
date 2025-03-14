@@ -1,5 +1,4 @@
 import DataDiri from "@/components/dataDiri";
-import SideScheduler from "@/components/sideScheduler";
 import Image from "next/image";
 import Link from "next/link";
 

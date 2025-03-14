@@ -18,17 +18,17 @@ export default function HomePageBanner() {
                 <div className="flex gap-8 mt-16 text-white">
                     <div>
                         <h2 className="font-semibold text-5xl mb-5">5,4K</h2>
-                        <p className="text-sm">Lorem ipsum dolor, sit <br /> amet consectetur</p>
+                        <p className="text-sm">Weekly transaction <br /> volume count</p>
                     </div>
 
                     <div>
                         <h2 className="font-semibold text-5xl mb-5">40%</h2>
-                        <p className="text-sm">Lorem ipsum dolor, sit <br /> amet consectetur</p>
+                        <p className="text-sm">Turning communities <br /> without recycling access.</p>
                     </div>
 
                     <div>
-                        <h2 className="font-semibold text-5xl mb-5">110K</h2>
-                        <p className="text-sm">Lorem ipsum dolor, sit <br /> amet consectetur</p>
+                        <h2 className="font-semibold text-5xl mb-5">110</h2>
+                        <p className="text-sm">Cities involved in the <br /> initiative.</p>
                     </div>
                 </div>
             </div>
