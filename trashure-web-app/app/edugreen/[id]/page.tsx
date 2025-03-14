@@ -3,7 +3,7 @@ import { videoData } from "@/data/videoData"
 import Image from "next/image"
 
 interface EduGreenVideoParams {
-    params: {id: number}
+    params: Promise<{id: number}>
 }
 
 export default async function EduGreenVideo({params}: EduGreenVideoParams){

@@ -1,5 +1,3 @@
-import VideoPopUp from "@/components/videoPopUp";
-
 export default function Subscription(){
     return (
         <div>
