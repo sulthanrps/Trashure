@@ -1,4 +1,3 @@
-import { videoData } from "@/data/videoData"
 import Image from "next/image"
 import Videos from "./videos"
 import Link from "next/link"
@@ -21,9 +20,7 @@ export default function VideosSection(){
                     </Link>
                 </div>
                 
-                
-                    <Videos length={4} style=" blur-sm opacity-70"/>
-                
+                <Videos length={4} style=" blur-sm opacity-70"/>
 
                 <h1 className="font-bold text-2xl">Watched</h1>
                 <Videos length={7} style="" />
