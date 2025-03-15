@@ -53,11 +53,11 @@ export default function WasteConnectDetail(){
                             </select>
                         </div>
 
-                        <Link href={'/edugreen'} className="w-[100%]">
+                        <Link href={'/profile/waste-connect-log'} className="w-[100%]">
                             <button className="bg-[#262832] py-3 font-semibold text-sm text-white rounded-lg w-[100%]">Reschedule</button>  
                         </Link>
 
-                        <Link href={'/edugreen'} className="w-[100%]">
+                        <Link href={'/profile/waste-connect-log'} className="w-[100%]">
                             <button className="border border-black py-3 font-semibold text-sm text-black rounded-lg w-[100%]">Cancel</button>  
                         </Link>
                     </div>

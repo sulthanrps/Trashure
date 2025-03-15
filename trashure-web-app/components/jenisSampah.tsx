@@ -7,10 +7,10 @@ export default function JenisSampah(){
             <div className="columns-4">
             {trashData.map((data, index) => {
                 return (
-                    <div key={index} className="border border-gray rounded-2xl flex flex-col justify-center items-center px-16 py-8 mb-6 ml-4 gap-4">
+                    <div key={index} className="border border-gray rounded-2xl flex flex-col justify-center items-center px-6 py-8 mb-6 ml-4 gap-4">
                         <Image 
                             src={data.imgSrc}
-                            width={120}
+                            width={235}
                             height={120}
                             alt="Trash Type Img"
                         />

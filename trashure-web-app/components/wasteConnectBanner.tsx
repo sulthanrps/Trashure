@@ -21,7 +21,7 @@ export default function WasteConnectBanner(){
                 alt="tree icon"
                 className="absolute right-0 top-5 z-[2]"
             />
-            <Link href={'#'}>
+            <Link href={'/profile/waste-connect-log'}>
                 <Image 
                     src={'/my-waste-connect-btn.png'}
                     width={246}

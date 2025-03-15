@@ -45,7 +45,7 @@ export default function TrashureWorthResult(){
                     <div className="bg-[#262832] flex flex-col items-center justify-center text-center px-8 py-6 rounded-2xl text-white">
                         <h1 className="font-bold text-2xl">Hibahkan sampahmu <br /> sekarang!</h1>
                         <p className="my-3">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.</p>
-                        <Link href="#">
+                        <Link href="/waste-connect">
                             <input type="submit" value={"Submit"} className="px-8 py-3 font-semibold text-black bg-white rounded-lg w-[330px] pointer" />
                         </Link>
                     </div>
