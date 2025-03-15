@@ -2,14 +2,14 @@ import { bankSampah } from "@/data/dataBankSampah"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function BankSampahCard({length, column} : {length : number, column : number}){
+export default function BankSampahCard({length, column} : {length : number, column : string}){
     return (
-        <div className={`grid grid-cols-${column} gap-8`}>
+        <div className={`grid grid-cols-${column ? '3' : '4'} gap-8`}>
             {bankSampah.map((data, index) => {
                 if(index < length){
                     return (
                         <Link href={`/waste-connect/${data.id}`} key={index}>
-                            <div className="border border-gray rounded-2xl pb-4">
+                            <div className="border border-gray rounded-2xl pb-4 max-w-max">
                                 <Image 
                                     src={data.image}
                                     width={283}

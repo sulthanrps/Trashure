@@ -1,34 +1,34 @@
 export const trashData = [
     {
-        imgSrc: "/triangle.png",
-        type: 'Sampah Plastik'
+        imgSrc: "/logam.png",
+        type: 'Logam'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Sampah Makanan'
+        imgSrc: "/plastik.png",
+        type: 'Plastik'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Sampah Basah'
+        imgSrc: "/kaca.png",
+        type: 'Kaca'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Sampah Kering'
+        imgSrc: "/kertas.png",
+        type: 'Kertas'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Daun Kering'
+        imgSrc: "/kaleng.png",
+        type: 'Kaleng'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Sampah Rumah Tangga'
+        imgSrc: "/tekstil.png",
+        type: 'Tekstil'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Limbah Rumah Sakit'
+        imgSrc: "/organik.png",
+        type: 'Kompos Organik'
     },
     {
-        imgSrc: "/triangle.png",
-        type: 'Limbah Pabrik'
+        imgSrc: "/elektronik.png",
+        type: 'Elektronik'
     }
 ]
